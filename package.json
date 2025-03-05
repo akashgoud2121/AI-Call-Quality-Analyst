@@ -1,0 +1,17 @@
+{
+  "name": "ai-call-quality-analyst",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
