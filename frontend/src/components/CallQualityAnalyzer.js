@@ -203,16 +203,13 @@ function CallQualityAnalyzer() {
   
     try {
       const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
-      console.log('Sending request to:', backendUrl);
-  
       const response = await axios.post(
         `${backendUrl}/api/analyze-call`,
         formData,
         {
           headers: { 
             'Content-Type': 'multipart/form-data'
-          },
-          timeout: 120000
+          }
         }
       );
       
