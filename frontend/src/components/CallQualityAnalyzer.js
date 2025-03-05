@@ -202,7 +202,7 @@ function CallQualityAnalyzer() {
     }
   
     try {
-      const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+      const backendUrl = process.env.REACT_APP_BACKEND_URL || 'https://your-railway-app.railway.app';
       const response = await axios.post(
         `${backendUrl}/api/analyze-call`,
         formData,
