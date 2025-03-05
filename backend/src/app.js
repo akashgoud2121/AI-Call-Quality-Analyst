@@ -7,7 +7,7 @@ const app = express();
 
 // Configure CORS
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ['http://localhost:3000', 'https://ai-call-quality-analyst.vercel.app'],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
